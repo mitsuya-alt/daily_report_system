@@ -45,7 +45,7 @@ public class EmployeeValidator {
     }
 
     private static String validateName(String name){
-        if(name!=null||name.equals("")){
+        if(name == null||name.equals("")){
             return "氏名を入力してください。";
         }
         return "";
