@@ -4,9 +4,9 @@
 <c:param name ="content">
 <h2>従業員　新規登録ページ</h2>
 
- <form method="POST" action="<c:url value='/Employees/Create' />">
+ <form method="POST" action="<c:url value='/employees/create' />">
 <c:import url ="form.jsp"/>
 </form>
-<p><a href ="<c:url value='/Employees/Index'/>">一覧へ戻る</a></p>
+<p><a href ="<c:url value='/employees/index'/>">一覧へ戻る</a></p>
 </c:param>
 </c:import>

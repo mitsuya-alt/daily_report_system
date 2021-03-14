@@ -20,7 +20,7 @@ import utils.EncryptUtil;
 /**
  * Servlet implementation class EmployeesCreateServlet
  */
-@WebServlet("/Employees/Create")
+@WebServlet("/employees/create")
 public class EmployeesCreateServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -62,7 +62,7 @@ public class EmployeesCreateServlet extends HttpServlet {
                 em.getTransaction().commit();
                 request.getSession().setAttribute("flush", "登録が完了しました。");
                 em.close();
-                response.sendRedirect(request.getContextPath() + "/Employees/Index");
+                response.sendRedirect(request.getContextPath() + "/employees/index");
 
             }
 

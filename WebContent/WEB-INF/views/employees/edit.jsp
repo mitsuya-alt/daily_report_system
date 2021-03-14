@@ -11,14 +11,14 @@
                     の従業員情報 編集ページ
                 </h2>
                 <p>(パスワードは変更する場合のみ入力してください)</p>
-                <form action="<c:url value='/Employees/Update'/>" method="POST">
+                <form action="<c:url value='/employees/update'/>" method="POST">
                     <c:import url="form.jsp">
                     </c:import>
                 </form>
                 <p>
                     <a href="#" onclick="confirmDestroy();">この従業員情報を削除する</a>
                 </p>
-                <form method="POST" action="<c:url value='/Employees/Destroy' />">
+                <form method="POST" action="<c:url value='/employees/destroy' />">
                     <input type="hidden" name="_token" value="${_token}" />
                 </form>
                 <script>
@@ -34,7 +34,7 @@
             </c:otherwise>
         </c:choose>
         <p>
-            <a href="<c:url value='/Employees/Index' />">一覧に戻る</a>
+            <a href="<c:url value='/employees/index' />">一覧に戻る</a>
         </p>
     </c:param>
 </c:import>

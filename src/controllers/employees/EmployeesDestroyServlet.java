@@ -16,7 +16,7 @@ import utils.DBUtil;
 /**
  * Servlet implementation class EmployeesDestroyServlet
  */
-@WebServlet("/Employees/Destroy")
+@WebServlet("/employees/destroy")
 public class EmployeesDestroyServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -42,7 +42,7 @@ public class EmployeesDestroyServlet extends HttpServlet {
             em.getTransaction().commit();
             em.close();
             request.getSession().setAttribute("flush","削除が完了しました。" );
-            response.sendRedirect(request.getContextPath() + "/Employees/Index");
+            response.sendRedirect(request.getContextPath() + "/employees/index");
         }
 
 

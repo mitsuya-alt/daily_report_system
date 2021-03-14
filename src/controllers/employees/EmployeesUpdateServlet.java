@@ -20,7 +20,7 @@ import utils.EncryptUtil;
 /**
  * Servlet implementation class EmployeesUpdateServlet
  */
-@WebServlet("/Employees/Update")
+@WebServlet("/employees/update")
 public class EmployeesUpdateServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -77,7 +77,7 @@ public class EmployeesUpdateServlet extends HttpServlet {
                 em.close();
                 request.getSession().removeAttribute("employee_id");
                 request.setAttribute("flush", "更新が完了しました。");
-                response.sendRedirect(request.getContextPath() + "/Employees/Index");
+                response.sendRedirect(request.getContextPath() + "/employees/index");
             }
 
         }
