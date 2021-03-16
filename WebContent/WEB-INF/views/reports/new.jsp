@@ -5,7 +5,7 @@
         <h2>日報　新規登録ページ</h2>
 
 
-        <form method ="POST" action ="<c:url value ='/reports/new'/>">
+        <form method ="POST" action ="<c:url value ='/reports/create'/>">
             <c:import url="form.jsp"></c:import>
         </form>
 
